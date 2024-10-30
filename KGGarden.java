@@ -23,6 +23,7 @@ public class KGGarden{
         // plants planted by a particular student
 
         // String student = s.nextLine();
+        // plantsOfAStudent(student, students, result);
 
         plantsOfAStudent("Alice", students, result);
         plantsOfAStudent("joseph", students, result);
