@@ -6,9 +6,32 @@ public class KGGarden{
         String row1 = "VRCGVVRVCGGCCGVRGCVCGCGV";
         String row2 = "VRCCCGCRRGVCGCRVVCVGCGCV";
         String [] result = plantsOfEveryone(students, plants, row1, row2);
+        
+         // plants planted by all students
+
         for(int i = 0; i < students.length; i++){
             System.out.println(students[i] + " - " + result[i]);
         }
+
+        // plants planted by a particular student
+
+        plantsOfAStudent("Alice", students, result);
+        plantsOfAStudent("joseph", students, result);
+        plantsOfAStudent("Fred", students, result);
+    }
+
+    public static void plantsOfAStudent(String name, String [] students, String [] result){
+        name = name.toLowerCase();
+        int index = 0;
+        for(String student : students){
+            if(student.toLowerCase().equals(name))  break;
+            index++;
+        }
+        if(index >= students.length){
+            System.out.println("Invalid student name");
+            return;
+        }
+        System.out.println(students[index] + " - " + result[index]);
     }
 
     public static String [] plantsOfEveryone(String [] students, String [] plants, String row1, String row2){
