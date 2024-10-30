@@ -1,12 +1,19 @@
 import java.util.Arrays;
+import java.util.Scanner;
 public class KGGarden{
     public static void main(String [] args){
         String [] students = {"Alice", "Bob", "Charlie", "David", "Eve", "Fred", "Ginny", "Harriet", "Ileana", "Joseph", "Kincaid", "Larry"};
         String [] plants = {"Grass", "Clover", "Radish", "Violet"};
         String row1 = "VRCGVVRVCGGCCGVRGCVCGCGV";
         String row2 = "VRCCCGCRRGVCGCRVVCVGCGCV";
-        String [] result = plantsOfEveryone(students, plants, row1, row2);
+
+        // Scanner s = new Scanner(System.in);
+        // String row1 = s.nextLine();
+        // String row2 = s.nextLine();
+
         
+        String [] result = plantsOfEveryone(students, plants, row1, row2);
+
          // plants planted by all students
 
         for(int i = 0; i < students.length; i++){
