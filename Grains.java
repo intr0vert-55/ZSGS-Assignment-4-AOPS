@@ -1,14 +1,18 @@
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Grains {
     public static void main(String [] args){
-
-        System.out.println(findTotal());
+        
+        // Scanner s = new Scanner(System.in);
+        // int square = s.nextInt();
+        // System.out.println(grainsOnSquare(square));
 
         System.out.println(grainsOnSquare(31));
         System.out.println(grainsOnSquare(1));
         System.out.println(grainsOnSquare(64));
-
+        
+        System.out.println(findTotal());
     }
 
     public static BigInteger findTotal(){
