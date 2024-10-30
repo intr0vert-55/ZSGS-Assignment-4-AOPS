@@ -17,7 +17,7 @@ public class Grains {
 
     public static BigInteger findTotal(){
         // Sum of series 2^0 + 2^1 + 2^2 + .... + 2^n = 2^(n+1) - 1
-        BigInteger result = BigInteger.valueOf(2).pow(65).subtract(BigInteger.ONE);
+        BigInteger result = BigInteger.valueOf(2).pow(64).subtract(BigInteger.ONE);
         return result;
     }
 
